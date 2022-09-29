@@ -2,11 +2,10 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "DM Sans";
+  font-family: "DM Sans", sans-serif;
+  font-family: "Poppins", sans-serif;
 }
-.fb-logo {
-  background-image: url(./components/Facebook_Logo_\(2019\).png);
-}
+
 .Home {
   text-align: center;
 }
@@ -39,19 +38,102 @@
   border-radius: 7px;
   border: solid 1px #000000;
 }
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.cover {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  height: 100%;
 }
 
-.App-link {
-  color: #ff8345;
+.left-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+  width: 60vw;
+  height: 100vh;
+  margin-top: 120px;
+}
+
+.upper-left-main {
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  /* align-items: start; */
+}
+.hire-me {
+  height: 90px;
+  width: 219px;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 36px;
+  color: #ffffff;
+  line-height: 47px;
+  text-align: center;
+  background: #fe481b;
+  border-radius: 7px;
+  margin-right: 50px;
+}
+
+.CV-download {
+  height: 90px;
+  width: 315px;
+  font-family: Poppins;
+  font-weight: 500;
+  font-size: 36px;
+  line-height: 54px;
+  text-align: center;
+  border: 2px solid #ff9b70;
+  border-radius: 10px;
+}
+#logos {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.follow-me {
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  height: 76px;
+}
+
+.follow-me p {
+  font-size: 2.25em;
+  margin-right: 20px;
+  display: inline;
+}
+
+.why-hire {
+  /* margin-top: 50px; */
+  width: 107%;
+  height: 347px;
+  background: #183b56;
+  color: #ffffff;
+  font-family: Poppins;
+  font-weight: 700;
+  font-size: 8rem;
+  /* text-align: center; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.profile-pic {
+  width: 36vw;
+  height: 111.5vh;
+  /* width: 200%; */
+  /* height: 150%; */
+  /* margin-right: 180px; */
+  object-fit: cover;
 }
 
 /* Extra small devices (phones, 600px and down) */

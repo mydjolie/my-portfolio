@@ -1,7 +1,8 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-import fbLogo from "./";
-import fbLogo from "./components/Facebook_Logo_(2019).png";
+// import mindPic from "./pic/mind-profile-pic.svg";
+
+const mindPic = "./pic/mind-profile-pic.png";
 
 function Home() {
   return (
@@ -49,29 +50,138 @@ function Home() {
           margin-right: 124px;
         `}
       />
-
+      {/* แถบ Nav จบ */}
       <main className="cover">
         <div className="left-main">
-          <div>
-            <h1>Hi! I Am Mind Warintorn</h1>
-            <p>
-              A Full-Stack Developer in training based in Bangkok, Thailand with{" "}
-              <b>Project Manager</b> experience and over <b>4 years</b> as a
-              Project Coordinator.
-            </p>
-            <div className="btn-group">
-              <button>Hire Me</button>
-              <button>Download CV</button>
+          <div
+            css={css`
+              position: absolute;
+              width: 449px;
+              height: 60px;
+              left: 511px;
+              top: 263px;
+              background: #5562ff;
+              opacity: 0.7;
+              border-radius: 29px;
+              display: flex;
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+            `}
+          >
+            <span
+              css={css`
+                font-family: "Poppins";
+                font-style: normal;
+                font-weight: 700;
+                font-size: 36px;
+                text-align: center;
+                color: #ffffff;
+              `}
+            >
+              Full-Stack Developer
+            </span>
+          </div>
+          <div className="upper-left-main">
+            <div
+              css={css`
+                font-family: Poppins;
+                font-style: normal;
+                font-weight: 700;
+                font-size: 5.5633rem;
+                line-height: 108px;
+                color: #183b56;
+                margin-left: 120px;
+                position: "relative";
+              `}
+            >
+              Hi! I Am <br />
+              Mind Warintorn
             </div>
-            <div className="follow-me">
-              <h3>Follow me</h3>
-              <div className="logos">
-                <img src="{fbLogo}" alt="facebook-logo" />
+            <p
+              css={css`
+                font-style: normal;
+                font-weight: 400;
+                font-size: 24px;
+                line-height: 31px;
+                margin-left: 120px;
+              `}
+            >
+              A Full-Stack Developer in training <br /> based in Bangkok,
+              Thailand with <b>Project Manager</b>
+              <br />
+              experience and over <b>4 years</b> as a Project Coordinator.
+            </p>
+            <div
+              className="btn-group"
+              css={css`
+                margin-left: 120px;
+              `}
+            >
+              <button className="hire-me">Hire Me</button>
+              <button className="CV-download">Download CV</button>
+            </div>
+            <div
+              className="follow-me"
+              css={css`
+                margin-left: 120px;
+              `}
+            >
+              <p>Follow me</p>
+              <div id="logos">
+                <img
+                  css={css`
+                    height: 90px;
+                    width: 90px;
+                    margin-right: 45px;
+                  `}
+                  src="https://img.icons8.com/color/192/facebook-new.png"
+                  alt="facebook-logo"
+                />
+                <img
+                  css={css`
+                    height: 76px;
+                    width: 76px;
+                    margin-right: 50px;
+                  `}
+                  src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
+                  alt="github-logo"
+                />
+                <img
+                  css={css`
+                    height: 76px;
+                    width: 76px;
+                    margin-right: 45px;
+                  `}
+                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/600px-LinkedIn_logo_initials.png?20140125013055"
+                  alt="linkedin-logo"
+                />
+                <img
+                  css={css`
+                    height: 76px;
+                    width: 76px;
+                    margin-right: 45px;
+                  `}
+                  src="https://seeklogo.com/images/I/instagram-logo-1494D6FE63-seeklogo.com.png"
+                  alt="instagram-logo"
+                />
               </div>
             </div>
           </div>
+          <div className="down-left-main">
+            <div className="why-hire">
+              <h1>Why Hire Me ?</h1>
+            </div>
+          </div>
         </div>
-        <div className="right-main"></div>
+
+        <div className="right-main">
+          <img
+            className="profile-pic"
+            src="https://i.postimg.cc/nc5NLJhq/mind-profile-pic.png"
+            alt="A very cute girl named Mind Warintorn"
+          />
+        </div>
       </main>
     </div>
   );
