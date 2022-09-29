@@ -1,8 +1,6 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-// import mindPic from "./pic/mind-profile-pic.svg";
-
-const mindPic = "./pic/mind-profile-pic.png";
+// import apricot from "./";
 
 function Home() {
   return (
@@ -58,7 +56,7 @@ function Home() {
               position: absolute;
               width: 449px;
               height: 60px;
-              left: 511px;
+              left: 535px;
               top: 263px;
               background: #5562ff;
               opacity: 0.7;
@@ -91,7 +89,7 @@ function Home() {
                 font-size: 5.5633rem;
                 line-height: 108px;
                 color: #183b56;
-                margin-left: 120px;
+                margin-left: 150px;
                 position: "relative";
               `}
             >
@@ -102,9 +100,9 @@ function Home() {
               css={css`
                 font-style: normal;
                 font-weight: 400;
-                font-size: 24px;
-                line-height: 31px;
-                margin-left: 120px;
+                font-size: 1.75em;
+                line-height: 40px;
+                margin-left: 150px;
               `}
             >
               A Full-Stack Developer in training <br /> based in Bangkok,
@@ -115,7 +113,7 @@ function Home() {
             <div
               className="btn-group"
               css={css`
-                margin-left: 120px;
+                margin-left: 150px;
               `}
             >
               <button className="hire-me">Hire Me</button>
@@ -124,47 +122,56 @@ function Home() {
             <div
               className="follow-me"
               css={css`
-                margin-left: 120px;
+                margin-left: 150px;
               `}
             >
-              <p>Follow me</p>
+              <p>Follow me :</p>
               <div id="logos">
-                <img
-                  css={css`
-                    height: 90px;
-                    width: 90px;
-                    margin-right: 45px;
-                  `}
-                  src="https://img.icons8.com/color/192/facebook-new.png"
-                  alt="facebook-logo"
-                />
-                <img
-                  css={css`
-                    height: 76px;
-                    width: 76px;
-                    margin-right: 50px;
-                  `}
-                  src="https://cdn-icons-png.flaticon.com/512/25/25231.png"
-                  alt="github-logo"
-                />
-                <img
-                  css={css`
-                    height: 76px;
-                    width: 76px;
-                    margin-right: 45px;
-                  `}
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/LinkedIn_logo_initials.png/600px-LinkedIn_logo_initials.png?20140125013055"
-                  alt="linkedin-logo"
-                />
-                <img
-                  css={css`
-                    height: 76px;
-                    width: 76px;
-                    margin-right: 45px;
-                  `}
-                  src="https://seeklogo.com/images/I/instagram-logo-1494D6FE63-seeklogo.com.png"
-                  alt="instagram-logo"
-                />
+                <a href="https://www.facebook.com/myddontmind">
+                  <img
+                    css={css`
+                      height: 100px;
+                      width: 100px;
+                      margin-right: 45px;
+                    `}
+                    src="img/fb-logo.svg"
+                    alt="facebook-logo"
+                  />
+                </a>
+                <a href="https://github.com/mydjolie">
+                  <img
+                    css={css`
+                      height: 76px;
+                      width: 76px;
+                      margin-right: 50px;
+                    `}
+                    src="img/github-logo.png"
+                    alt="github-logo"
+                  />
+                </a>
+                <a href="https://www.linkedin.com/in/warintorn-sathirasrindh-519348152/">
+                  <img
+                    css={css`
+                      height: 76px;
+                      width: 90px;
+                      margin-right: 45px;
+                    `}
+                    src="img/LI-in-bug.png"
+                    alt="linkedin-logo"
+                  />
+                </a>
+                <a href="https://www.instagram.com/mydjolie_/">
+                  <img
+                    css={css`
+                      height: 120px;
+                      width: 120px;
+                      margin-right: 45px;
+                      object: fill;
+                    `}
+                    src="img/Instagram-Logo.wine.svg"
+                    alt="instagram-logo"
+                  />
+                </a>
               </div>
             </div>
           </div>
@@ -176,8 +183,8 @@ function Home() {
                 css={css`
                   width: 272px;
                   height: 68px;
-                  left: 485px;
-                  top: 1140px;
+                  left: 586px;
+                  top: 1300px;
                 `}
               ></div>
             </div>
@@ -190,13 +197,25 @@ function Home() {
             position: relative;
           `}
         >
+          <img
+            src="img/Untitled_Artwork 3.png"
+            alt="an orange parrot cartoon"
+            css={css`
+              position: absolute;
+              top: 300px;
+              right: 480px;
+              scale: 45%;
+              z-index: 0;
+              display: none;
+            `}
+          />
           <p
             css={css`
               position: absolute;
               width: max-content;
               height: 98px;
-              left: 80px;
-              top: 70px;
+              left: 150px;
+              top: 90px;
               font-family: "DM Sans";
               font-size: 2rem;
               line-height: 49px;
@@ -208,23 +227,22 @@ function Home() {
             when <b>Life is an Adventure</b> :D
           </p>
           <img
-            src="https://www.pngall.com/wp-content/uploads/5/Vertical-Line-PNG-Images.png"
+            src="img/vector 129.svg"
             alt="a vertical line"
             css={css`
               position: absolute;
-              width: 46.84px;
-              height: 84.68px;
-              zindex: 50;
-              right: 230px;
-              top: 190px;
-
-              transform: rotate(-150deg);
+              width: 50px;
+              height: 90px;
+              z-index: 50;
+              right: 270px;
+              top: 220px;
+              transform: rotate(-175deg);
             `}
           />
 
           <img
             className="profile-pic"
-            src="https://i.postimg.cc/nc5NLJhq/mind-profile-pic.png"
+            src="img/mind-profile-pic.png"
             alt="A very cute girl named Mind Warintorn"
           />
         </div>
