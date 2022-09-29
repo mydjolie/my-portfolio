@@ -127,6 +127,14 @@
   flex-wrap: wrap;
 }
 
+.why-hire h1 {
+  z-index: 100;
+}
+.orange-underline {
+  position: absolute;
+  background: #ff8345;
+  opacity: 0.7;
+}
 .profile-pic {
   width: 36vw;
   height: 111.5vh;

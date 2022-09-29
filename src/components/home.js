@@ -171,6 +171,15 @@ function Home() {
           <div className="down-left-main">
             <div className="why-hire">
               <h1>Why Hire Me ?</h1>
+              <div
+                className="orange-underline"
+                css={css`
+                  width: 272px;
+                  height: 68px;
+                  left: 485px;
+                  top: 1140px;
+                `}
+              ></div>
             </div>
           </div>
         </div>
