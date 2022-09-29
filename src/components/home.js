@@ -184,14 +184,13 @@ function Home() {
           <p
             css={css`
               position: absolute;
-              width: 626px;
+              width: max-content;
               height: 98px;
               left: 80px;
               top: 70px;
               font-family: "DM Sans";
               font-size: 2rem;
               line-height: 49px;
-
               color: #000000;
             `}
           >
