@@ -130,9 +130,7 @@
 .profile-pic {
   width: 36vw;
   height: 111.5vh;
-  /* width: 200%; */
-  /* height: 150%; */
-  /* margin-right: 180px; */
+  /* display: none; */
   object-fit: cover;
 }
 

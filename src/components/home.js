@@ -175,7 +175,45 @@ function Home() {
           </div>
         </div>
 
-        <div className="right-main">
+        <div
+          className="right-main"
+          css={css`
+            position: relative;
+          `}
+        >
+          <p
+            css={css`
+              position: absolute;
+              width: 626px;
+              height: 98px;
+              left: 80px;
+              top: 70px;
+              font-family: "DM Sans";
+              font-size: 2rem;
+              line-height: 49px;
+
+              color: #000000;
+            `}
+          >
+            {" "}
+            <b>Learn</b> , <b>Unlearn</b> and <b>Relearn</b> is the <br /> key
+            when <b>Life is an Adventure</b> :D
+          </p>
+          <img
+            src="https://www.pngall.com/wp-content/uploads/5/Vertical-Line-PNG-Images.png"
+            alt="a vertical line"
+            css={css`
+              position: absolute;
+              width: 46.84px;
+              height: 84.68px;
+              zindex: 50;
+              right: 230px;
+              top: 190px;
+
+              transform: rotate(-150deg);
+            `}
+          />
+
           <img
             className="profile-pic"
             src="https://i.postimg.cc/nc5NLJhq/mind-profile-pic.png"
