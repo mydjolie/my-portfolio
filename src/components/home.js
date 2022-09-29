@@ -1,11 +1,10 @@
 /** @jsxImportSource @emotion/react */
 import { css } from "@emotion/react";
-// import apricot from "./";
 
 function Home() {
   return (
     <div className="home">
-      <nav className="navbar">
+      <nav className="navbar" id="home">
         <div
           css={css`
             display: inline;
@@ -20,7 +19,7 @@ function Home() {
               display: inline;
             `}
           >
-            Mind Warintorn
+            mydjolie
             <p
               css={css`
                 color: #ff8345;
@@ -33,8 +32,12 @@ function Home() {
           </p>
         </div>
         <div className="navbar-link">
-          <p className="nav-home">Home</p>
-          <p className="nav-why">Why Me?</p>
+          <a href="#home">
+            <p className="nav-home">Home</p>
+          </a>
+          <a href="#whyMeScroll">
+            <p className="nav-why">Why Me?</p>
+          </a>
           <p className="nav-ed">Education & Works</p>
           <p className="nav-skills">Skills</p>
         </div>
@@ -44,79 +47,30 @@ function Home() {
       <hr
         css={css`
           border: 3px solid rgba(0, 0, 0, 0.09);
-          margin-left: 124px;
-          margin-right: 124px;
+          margin-left: 7vw;
+          margin-right: 7vw;
+          align-content: start;
+          width: 45vw;
         `}
       />
       {/* แถบ Nav จบ */}
       <main className="cover">
         <div className="left-main">
-          <div
-            css={css`
-              position: absolute;
-              width: 449px;
-              height: 60px;
-              left: 535px;
-              top: 263px;
-              background: #5562ff;
-              opacity: 0.7;
-              border-radius: 29px;
-              display: flex;
-              flex-direction: column;
-              justify-content: center;
-              align-items: center;
-            `}
-          >
-            <span
-              css={css`
-                font-family: "Poppins";
-                font-style: normal;
-                font-weight: 700;
-                font-size: 36px;
-                text-align: center;
-                color: #ffffff;
-              `}
-            >
-              Full-Stack Developer
-            </span>
+          <div className="fullStack">
+            <span>Full-Stack Developer</span>
           </div>
           <div className="upper-left-main">
-            <div
-              css={css`
-                font-family: Poppins;
-                font-style: normal;
-                font-weight: 700;
-                font-size: 5.5633rem;
-                line-height: 108px;
-                color: #183b56;
-                margin-left: 150px;
-                position: "relative";
-              `}
-            >
+            <div className="main-heading">
               Hi! I Am <br />
               Mind Warintorn
             </div>
-            <p
-              css={css`
-                font-style: normal;
-                font-weight: 400;
-                font-size: 2em;
-                line-height: 45px;
-                margin-left: 150px;
-                margin-bottom: 50px;
-              `}
-            >
+            <p className="main-description">
               A Full-Stack Developer in training <br /> based in Bangkok,
               Thailand with <b>Project Manager</b>
               <br />
               experience and over <b>4 years</b> as a Project Coordinator.
             </p>
-            <div
-              className="btn-group"
-              css={css`
-                margin-left: 150px;
-              `}
-            >
+            <div className="btn-group">
               <a href="mailto:myddontmind@gmail.com">
                 <button className="hire-me">Hire Me</button>
               </a>
@@ -128,19 +82,15 @@ function Home() {
                 <button className="CV-download">Download CV</button>
               </a>
             </div>
-            <div
-              className="follow-me"
-              css={css`
-                margin-left: 150px;
-              `}
-            >
-              <p>Follow me :</p>
+
+            <div className="follow-me">
+              {/* <p>Follow me :</p> */}
               <div id="logos">
                 <a href="https://www.facebook.com/myddontmind" target="blank">
                   <img
                     css={css`
-                      height: 100px;
-                      width: 100px;
+                      height: 50px;
+                      width: 50px;
                       margin-right: 45px;
                     `}
                     src="img/fb-logo.svg"
@@ -150,8 +100,8 @@ function Home() {
                 <a href="https://github.com/mydjolie" target="blank">
                   <img
                     css={css`
-                      height: 76px;
-                      width: 76px;
+                      height: 40px;
+                      width: 40px;
                       margin-right: 50px;
                     `}
                     src="img/github-logo.png"
@@ -164,8 +114,7 @@ function Home() {
                 >
                   <img
                     css={css`
-                      height: 76px;
-                      width: 90px;
+                      height: 40px;
                       margin-right: 35px;
                     `}
                     src="img/LI-in-bug.png"
@@ -175,8 +124,8 @@ function Home() {
                 <a href="https://www.instagram.com/mydjolie_/" target="blank">
                   <img
                     css={css`
-                      height: 120px;
-                      width: 120px;
+                      height: 60px;
+                      width: 60px;
                       margin-right: 45px;
                       object: fill;
                     `}
@@ -187,69 +136,36 @@ function Home() {
               </div>
             </div>
           </div>
+          <hr
+            className="white-line2"
+            css={css`
+              border: 3px solid rgba(0, 0, 0, 0.09);
+              margin-left: 7vw;
+              margin-right: 7vw;
+              align-content: start;
+              width: 30vw;
+            `}
+          />
           <div className="down-left-main">
-            <div className="why-hire">
-              <h1>Why Hire Me ?</h1>
-              <div
-                className="orange-underline"
-                css={css`
-                  width: 272px;
-                  height: 68px;
-                  left: 586px;
-                  top: 1300px;
-                `}
-              ></div>
+            <div className="why-hire" id="whyMeScroll">
+              <h1>
+                Why <span className="hire">Hire</span> Me ?
+              </h1>
+              {/* <div className="orange-underline"></div> */}
             </div>
           </div>
         </div>
 
-        <div
-          className="right-main"
-          css={css`
-            position: relative;
-          `}
-        >
-          <img
-            src="img/Untitled_Artwork 3.png"
-            alt="an orange parrot cartoon"
-            css={css`
-              position: absolute;
-              top: 300px;
-              right: 480px;
-              scale: 45%;
-              z-index: 0;
-              display: none;
-            `}
-          />
-          <p
-            css={css`
-              position: absolute;
-              width: max-content;
-              height: 98px;
-              left: 150px;
-              top: 90px;
-              font-family: "DM Sans";
-              font-size: 2rem;
-              line-height: 49px;
-              color: #000000;
-            `}
-          >
+        <div className="right-main">
+          <p className="quote">
             {" "}
             <b>Learn</b> , <b>Unlearn</b> and <b>Relearn</b> is the <br /> key
             when <b>Life is an Adventure</b> :D
           </p>
           <img
+            className="line"
             src="img/vector 129.svg"
             alt="a vertical line"
-            css={css`
-              position: absolute;
-              width: 50px;
-              height: 90px;
-              z-index: 50;
-              right: 270px;
-              top: 220px;
-              transform: rotate(-175deg);
-            `}
           />
 
           <img
