@@ -19,24 +19,44 @@
 }
 
 .navbar-link {
-  width: 30%;
+  width: 40%;
   display: flex;
   flex-direction: row;
-  /* align-items: center; */
   justify-content: space-between;
-  font-size: 18px;
+  font-size: 1.5rem;
   font-weight: 500;
   color: #183b56;
   text-decoration: none;
 }
 
+.nav-home:hover {
+  text-decoration: underline wavy 2.5px #fe481b;
+}
+.nav-why:hover {
+  text-decoration: underline wavy 2.5px #fe481b;
+}
+.nav-ed:hover {
+  text-decoration: underline wavy 2.5px #fe481b;
+}
+.nav-skills:hover {
+  text-decoration: underline wavy 2.5px #fe481b;
+}
+
 .btn-chat-with-me {
   height: 64px;
-  width: 124px;
-  font-size: 1em;
+  width: 200px;
+  font-size: 1.25em;
+  font-weight: 700;
   color: #363131;
   border-radius: 7px;
   border: solid 1px #000000;
+}
+
+.btn-chat-with-me:hover {
+  background-color: #ff7c5b;
+  color: #ffffff;
+  border: 3px solid #ff7c5b;
+  border-radius: 7px;
 }
 
 .cover {
@@ -45,6 +65,9 @@
   align-items: center;
   justify-content: space-between;
   height: 100%;
+}
+.cover button:hover {
+  background-color: #ff7c5b;
 }
 
 .left-main {
@@ -62,7 +85,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* align-items: start; */
 }
 .hire-me {
   height: 90px;
@@ -89,6 +111,10 @@
   border: 2px solid #ff9b70;
   border-radius: 10px;
 }
+.CV-download:hover {
+  color: #ffffff;
+}
+
 #logos {
   display: flex;
   flex-direction: row;
@@ -111,7 +137,6 @@
 }
 
 .why-hire {
-  /* margin-top: 50px; */
   width: 107%;
   height: 347px;
   background: #183b56;
@@ -119,7 +144,6 @@
   font-family: Poppins;
   font-weight: 700;
   font-size: 8rem;
-  /* text-align: center; */
   display: flex;
   flex-direction: row;
   justify-content: center;

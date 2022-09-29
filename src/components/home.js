@@ -33,10 +33,10 @@ function Home() {
           </p>
         </div>
         <div className="navbar-link">
-          <p>Home</p>
-          <p>Why Me?</p>
-          <p>Education & Works</p>
-          <p>Skills</p>
+          <p className="nav-home">Home</p>
+          <p className="nav-why">Why Me?</p>
+          <p className="nav-ed">Education & Works</p>
+          <p className="nav-skills">Skills</p>
         </div>
 
         <button className="btn-chat-with-me">Chat with Me</button>
@@ -100,9 +100,10 @@ function Home() {
               css={css`
                 font-style: normal;
                 font-weight: 400;
-                font-size: 1.75em;
-                line-height: 40px;
+                font-size: 2em;
+                line-height: 45px;
                 margin-left: 150px;
+                margin-bottom: 50px;
               `}
             >
               A Full-Stack Developer in training <br /> based in Bangkok,
@@ -116,8 +117,16 @@ function Home() {
                 margin-left: 150px;
               `}
             >
-              <button className="hire-me">Hire Me</button>
-              <button className="CV-download">Download CV</button>
+              <a href="mailto:myddontmind@gmail.com">
+                <button className="hire-me">Hire Me</button>
+              </a>
+
+              <a
+                href="https://drive.google.com/file/d/1V0r3qcqzlXB7XWhzVoR6x6VWPaHKi-Vh/view?usp=sharing"
+                target="blank"
+              >
+                <button className="CV-download">Download CV</button>
+              </a>
             </div>
             <div
               className="follow-me"
@@ -127,7 +136,7 @@ function Home() {
             >
               <p>Follow me :</p>
               <div id="logos">
-                <a href="https://www.facebook.com/myddontmind">
+                <a href="https://www.facebook.com/myddontmind" target="blank">
                   <img
                     css={css`
                       height: 100px;
@@ -138,7 +147,7 @@ function Home() {
                     alt="facebook-logo"
                   />
                 </a>
-                <a href="https://github.com/mydjolie">
+                <a href="https://github.com/mydjolie" target="blank">
                   <img
                     css={css`
                       height: 76px;
@@ -149,18 +158,21 @@ function Home() {
                     alt="github-logo"
                   />
                 </a>
-                <a href="https://www.linkedin.com/in/warintorn-sathirasrindh-519348152/">
+                <a
+                  href="https://www.linkedin.com/in/warintorn-sathirasrindh-519348152/"
+                  target="blank"
+                >
                   <img
                     css={css`
                       height: 76px;
                       width: 90px;
-                      margin-right: 45px;
+                      margin-right: 35px;
                     `}
                     src="img/LI-in-bug.png"
                     alt="linkedin-logo"
                   />
                 </a>
-                <a href="https://www.instagram.com/mydjolie_/">
+                <a href="https://www.instagram.com/mydjolie_/" target="blank">
                   <img
                     css={css`
                       height: 120px;
