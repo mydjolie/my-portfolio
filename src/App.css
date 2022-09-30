@@ -11,6 +11,29 @@ html {
 .Home {
   text-align: center;
 }
+#home {
+  height: 100px;
+}
+.mind-head {
+  display: inline;
+  flex-direction: row;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 3em;
+}
+.mind-head-point {
+  font-weight: 700;
+  font-size: 1em;
+  display: inline;
+  color: #fe481b;
+}
+.nav-bar-line {
+  border: 3px solid rgba(0, 0, 0, 0.09);
+  margin-left: 7vw;
+  margin-right: 7vw;
+  align-content: start;
+  width: 45vw;
+}
 .navbar {
   display: flex;
   flex-direction: row;
@@ -18,15 +41,14 @@ html {
   align-items: center;
   margin-left: 7vw;
   margin-right: 7vw;
-  height: 50%;
 }
 
 .navbar-link {
-  width: 50%;
+  width: 40%;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   font-weight: 500;
   color: #183b56;
   text-decoration: none;
@@ -47,8 +69,8 @@ html {
 
 .btn-chat-with-me {
   height: 64px;
-  width: 150px;
-  font-size: 1em;
+  width: 180px;
+  font-size: 1.3em;
   font-weight: 700;
   color: #363131;
   border-radius: 7px;
@@ -84,12 +106,12 @@ html {
 }
 .fullStack {
   position: absolute;
-  width: 300px;
-  height: 50px;
-  left: 370px;
-  top: 225px;
+  width: 450px;
+  height: 60px;
+  left: 570px;
+  top: 260px;
   background: #5562ff;
-  border-radius: 29px;
+  border-radius: 10em;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -97,12 +119,14 @@ html {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  font-size: 24px;
+  font-size: 2.2em;
   text-align: center;
   color: #ffffff;
 }
 
 .upper-left-main {
+  margin-top: 30px;
+  margin-left: 100px;
   height: 60vh;
   display: flex;
   flex-direction: column;
@@ -113,30 +137,25 @@ html {
   font-family: Poppins;
   font-style: normal;
   font-weight: 700;
-  font-size: 400%;
-  line-height: 90px;
+  font-size: 700%;
+  line-height: 120px;
   color: #183b56;
-  margin-left: 90px;
   position: "relative";
 }
 
-.btn-group {
-  margin-left: 90px;
-}
 .main-description {
   font-style: normal;
   font-weight: 400;
-  font-size: 1.25em;
-  line-height: 35px;
-  margin-left: 90px;
+  font-size: 2em;
+  line-height: 40px;
 }
 
 .hire-me {
-  height: 60px;
-  width: 120px;
+  height: 80px;
+  width: 250px;
   font-family: Poppins;
   font-weight: 700;
-  font-size: 1em;
+  font-size: 2em;
   color: #ffffff;
   line-height: 47px;
   text-align: center;
@@ -146,11 +165,11 @@ html {
 }
 
 .CV-download {
-  height: 60px;
-  width: 150px;
+  height: 80px;
+  width: 300px;
   font-family: Poppins;
   font-weight: 500;
-  font-size: 1em;
+  font-size: 2em;
   line-height: 54px;
   text-align: center;
   border: 2px solid #ff9b70;
@@ -165,6 +184,7 @@ html {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  height: ;
 }
 
 .follow-me {
@@ -172,9 +192,7 @@ html {
   flex-direction: row;
   justify-content: start;
   align-items: center;
-  height: 76px;
-  margin-left: 90px;
-  margin-bottom: 50px;
+  height: 90px;
 }
 
 .follow-me p {
@@ -183,6 +201,28 @@ html {
   display: inline;
 }
 
+.fb-logo {
+  height: 180px;
+  width: 80px;
+  margin-right: 45px;
+}
+
+.github-logo {
+  height: 60px;
+  width: 60px;
+  margin-right: 50px;
+}
+.linkedin-logo {
+  height: 50px;
+  margin-right: 45px;
+}
+
+.instagram-logo {
+  height: 80px;
+  width: 80px;
+  margin-right: 45px;
+  object-fit: fill;
+}
 .why-hire {
   width: 100%;
   height: 240px;
@@ -223,28 +263,27 @@ html {
   position: absolute;
   width: max-content;
   height: 98px;
-  left: 60px;
-  top: 60px;
+  left: 110px;
+  top: 80px;
   font-family: "DM Sans";
-  font-size: 170%;
-  line-height: 40px;
+  font-size: 220%;
+  line-height: 50px;
   color: #000000;
 }
 
 .line {
   position: absolute;
-  width: 40px;
-  height: 70px;
+  width: 60px;
+  height: 90px;
   z-index: 50;
-  right: 200px;
-  top: 170px;
+  right: 230px;
+  top: 200px;
   transform: rotate(-175deg);
 }
 
 .profile-pic {
   width: 45vw;
   height: 109vh;
-  /* display: none; */
   object-fit: cover;
   z-index: 10;
 }
@@ -263,9 +302,8 @@ html {
 .why-me-box {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  /* flex-wrap: wrap; */
   width: 100vw;
   height: 60vh;
   margin-left: 40px;
@@ -275,25 +313,35 @@ html {
   background: #ffffff;
   border: 1px solid #ededed;
   border-radius: 20px;
-  height: 90%;
-  width: 30%;
+  height: 80%;
+  width: 25%;
   margin-top: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .why-2 {
   background: #ffffff;
   border: 1px solid #ededed;
   border-radius: 20px;
-  height: 90%;
-  width: 30%;
-  /* margin: 0 25px 0 25px; */
+  height: 80%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .why-3 {
   background: #ffffff;
   border: 1px solid #ededed;
   border-radius: 20px;
-  height: 90%;
-  width: 30%;
-  /* margin: 0 25px 0 25px; */
+  height: 80%;
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
 }
 .why-me-content {
   display: flex;
@@ -302,9 +350,9 @@ html {
 }
 
 .why-me-img {
-  height: 100px;
-  width: 100px;
-  margin: 40px 0px 50px 130px;
+  height: 200px;
+  width: 200px;
+  /* margin: 44px 0px 30px 100px; */
   align-content: center;
 }
 
@@ -312,11 +360,11 @@ html {
   font-family: "Poppins";
   font-style: normal;
   font-weight: 600;
-  font-size: 2rem;
-  line-height: 2rem;
+  font-size: 2.5rem;
+  line-height: 2.5rem;
   letter-spacing: 0.2px;
   color: #183b56;
-  margin: 0 50px 1.8rem 40px;
+  margin: 0 50px 1rem 40px;
 }
 
 .why-description {
@@ -326,7 +374,7 @@ html {
   font-size: 1.25rem;
   line-height: 2.1875rem;
   color: #5a7184;
-  margin: 20px 20px 0 40px;
+  margin: 10px 10px 0 40px;
 }
 /* 
 .Tab {
@@ -335,1036 +383,130 @@ html {
   border-radius: 10px;
   border: 2px solid white;
 } */
-/* Extra small devices (phones, 600px and down) */
-@media only screen and (max-width: 600px) {
+.ed-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
 }
 
-/* Small devices (portrait tablets and large phones, 600px and up) */
-@media only screen and (min-width: 600px) {
+.tab {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  width: 500%;
+  max-width: 100rem;
+  align-content: center;
+}
+.tab-list {
+  display: flex;
+  flex-direction: space-between;
+  padding: 0.25rem;
+  border-radius: 0.75rem;
+  background-color: rgb(31, 57, 138, 0.2);
+}
+.tab-a {
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem;
+  color: #1d4ed8;
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  width: 100%;
+  border-radius: 0.5rem;
 }
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "DM Sans", sans-serif;
-    font-family: "Poppins", sans-serif;
-  }
-  html {
-    scroll-behavior: smooth;
-  }
-  .Home {
-    text-align: center;
-  }
-  .navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 4vw;
-    margin-right: 4vw;
-    height: 30%;
-  }
-  #home {
-    font-size: 12px;
-  }
-
-  .navbar-link {
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 14px;
-    font-weight: 500;
-    color: #183b56;
-    text-decoration: none;
-  }
-
-  .nav-home:hover {
-    text-decoration: underline wavy 2.5px #fe481b;
-  }
-  .nav-why:hover {
-    text-decoration: underline wavy 2.5px #fe481b;
-  }
-  .nav-ed:hover {
-    text-decoration: underline wavy 2.5px #fe481b;
-  }
-  .nav-skills:hover {
-    text-decoration: underline wavy 2.5px #fe481b;
-  }
-
-  .btn-chat-with-me {
-    height: 40px;
-    width: 120px;
-    font-size: 1em;
-    font-weight: 700;
-    color: #363131;
-    border-radius: 7px;
-    border: solid 1px #000000;
-  }
-
-  .btn-chat-with-me:hover {
-    background-color: #ff7c5b;
-    color: #ffffff;
-    border: 3px solid #ff7c5b;
-    border-radius: 7px;
-  }
-
-  .cover {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: 60%;
-  }
-  .cover button:hover {
-    background-color: #ff7c5b;
-  }
-
-  .left-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: space-between;
-    width: 60vw;
-    height: 100vh;
-    margin-top: 10px;
-  }
-  .fullStack {
-    position: absolute;
-    width: 180px;
-    height: 25px;
-    left: 230px;
-    top: 135px;
-    background: #5562ff;
-    border-radius: 29px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    text-align: center;
-    color: #ffffff;
-  }
-
-  .upper-left-main {
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .main-heading {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 230%;
-    line-height: 35px;
-    color: #183b56;
-    margin-left: 70px;
-    position: "relative";
-    margin-bottom: 10px;
-    margin-top: px;
-  }
-
-  .btn-group {
-    margin-left: 70px;
-    margin-top: 15px;
-    margin-bottom: 10px;
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-  }
-  .main-description {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 15px;
-    margin-left: 70px;
-    margin-bottom: 10px;
-  }
-
-  .hire-me {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-
-    height: 30px;
-    width: 100px;
-    font-family: Poppins;
-    font-weight: 700;
-    font-size: 1em;
-    color: #ffffff;
-    text-align: center;
-    background: #fe481b;
-    border-radius: 7px;
-    margin-right: 30px;
-  }
-
-  .CV-download {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    height: 30px;
-    width: 120px;
-    font-family: Poppins;
-    font-weight: 500;
-    font-size: 1em;
-    text-align: center;
-    border: 2px solid #ff9b70;
-    border-radius: 10px;
-  }
-  .CV-download:hover {
-    color: #ffffff;
-  }
-
-  #logos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .follow-me {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    height: 76px;
-    margin-left: 70px;
-    margin-bottom: 70px;
-  }
-
-  .follow-me p {
-    font-size: 2.25em;
-    margin-right: 20px;
-    display: inline;
-  }
-  .white-line2 {
-    display: none;
-  }
-  .why-hire {
-    width: 100%;
-    height: 130px;
-    background: #183b56;
-    color: #ffffff;
-    font-family: Poppins;
-    font-weight: 700;
-    font-size: 300%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    margin-top: 65px;
-  }
-
-  .why-hire h1 {
-    z-index: 100;
-    position: relative;
-  }
-
-  .hire {
-    text-decoration: underline solid rgb(255, 131, 69, 0.7) 10px;
-  }
-  .orange-underline {
-    background: #ff8345;
-    opacity: 0.7;
-    z-index: 20;
-    position: relative;
-    top: 20px;
-    right: 373px;
-    width: 180px;
-    height: 40px;
-  }
-  .right-main {
-    position: relative;
-  }
-  .quote {
-    position: absolute;
-    width: max-content;
-    height: 98px;
-    left: 60px;
-    top: 30px;
-    font-family: "DM Sans";
-    font-size: 100%;
-    line-height: 20px;
-    color: #000000;
-  }
-  .line {
-    position: absolute;
-    width: 40px;
-    height: 70px;
-    z-index: 50;
-    right: 290px;
-    top: 70px;
-    transform: rotate(-175deg);
-    display: none;
-  }
-
-  .profile-pic {
-    width: 50vw;
-    height: 119vh;
-    /* display: none; */
-    object-fit: cover;
-    z-index: 10;
-  }
-
-  /* จน Home */
-
-  .why-me {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f0e3e387;
-    height: 70vh;
-  }
-
-  .why-me-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 90vw;
-    height: 50vh;
-    margin-left: 40px;
-    margin-right: 40px;
-  }
-  .why-1 {
-    background: #ffffff;
-    border: 1px solid #ededed;
-    border-radius: 20px;
-    height: 90%;
-    width: 30%;
-    margin-top: 15px;
-  }
-
-  .why-2 {
-    background: #ffffff;
-    border: 1px solid #ededed;
-    border-radius: 20px;
-    height: 90%;
-    width: 30%;
-    /* margin: 0 25px 0 25px; */
-  }
-  .why-3 {
-    background: #ffffff;
-    border: 1px solid #ededed;
-    border-radius: 20px;
-    height: 90%;
-    width: 30%;
-    /* margin: 0 25px 0 25px; */
-  }
-  .why-me-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-  }
-
-  .why-me-img {
-    height: 50px;
-    width: 50px;
-    margin: 20px 0px 20px 90px;
-    align-content: center;
-  }
-
-  .why-heading {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1rem;
-    line-height: 1.1rem;
-    letter-spacing: 0.2px;
-    color: #183b56;
-    margin: 0 30px 12px 30px;
-  }
-
-  .why-description {
-    font-family: "DM Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 10px;
-    line-height: 10px;
-    color: #5a7184;
-    margin: 0 30px 12px 30px;
-  }
+.tab.b {
+  --ring-color: #ffffff;
+  --ring-opacity: 0.6;
+  --ring-offset-width: 2px;
+  box-shadow: 0 0 0 var(--ring-offset-width) var(--ring-offset-color),
+    var(--ring-shadow);
+  --ring-offset-color: #60a5fa;
 }
 
-/* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "DM Sans", sans-serif;
-    font-family: "Poppins", sans-serif;
-  }
-  html {
-    scroll-behavior: smooth;
-  }
-  .Home {
-    text-align: center;
-  }
-  .navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 7vw;
-    margin-right: 7vw;
-    height: 50%;
-  }
-
-  .navbar-link {
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 1.25rem;
-    font-weight: 500;
-    color: #183b56;
-    text-decoration: none;
-  }
-
-  .nav-home:hover {
-    text-decoration: underline wavy 2.5px #fe481b;
-  }
-  .nav-why:hover {
-    text-decoration: underline wavy 2.5px #fe481b;
-  }
-  .nav-ed:hover {
-    text-decoration: underline wavy 2.5px #fe481b;
-  }
-  .nav-skills:hover {
-    text-decoration: underline wavy 2.5px #fe481b;
-  }
-
-  .btn-chat-with-me {
-    height: 64px;
-    width: 150px;
-    font-size: 1em;
-    font-weight: 700;
-    color: #363131;
-    border-radius: 7px;
-    border: solid 1px #000000;
-  }
-
-  .btn-chat-with-me:hover {
-    background-color: #ff7c5b;
-    color: #ffffff;
-    border: 3px solid #ff7c5b;
-    border-radius: 7px;
-  }
-
-  .cover {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: 80%;
-  }
-  .cover button:hover {
-    background-color: #ff7c5b;
-  }
-
-  .left-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: space-between;
-    width: 60vw;
-    height: 100vh;
-    margin-top: 80px;
-  }
-  .fullStack {
-    position: absolute;
-    width: 250px;
-    height: 50px;
-    left: 290px;
-    top: 205px;
-    background: #5562ff;
-    border-radius: 29px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    text-align: center;
-    color: #ffffff;
-  }
-
-  .upper-left-main {
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
-
-  .main-heading {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 350%;
-    line-height: 80px;
-    color: #183b56;
-    margin-left: 50px;
-    position: "relative";
-  }
-
-  .btn-group {
-    margin-left: 50px;
-    margin-bottom: 30px;
-  }
-  .main-description {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1em;
-    line-height: 25px;
-    margin-left: 50px;
-    margin-bottom: 30px;
-  }
-
-  .hire-me {
-    height: 60px;
-    width: 120px;
-    font-family: Poppins;
-    font-weight: 700;
-    font-size: 1em;
-    color: #ffffff;
-    line-height: 47px;
-    text-align: center;
-    background: #fe481b;
-    border-radius: 7px;
-    margin-right: 30px;
-  }
-
-  .CV-download {
-    height: 60px;
-    width: 150px;
-    font-family: Poppins;
-    font-weight: 500;
-    font-size: 1em;
-    line-height: 54px;
-    text-align: center;
-    border: 2px solid #ff9b70;
-    border-radius: 10px;
-  }
-  .CV-download:hover {
-    color: #ffffff;
-  }
-
-  #logos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .follow-me {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    height: 76px;
-    margin-left: 50px;
-    margin-bottom: 50px;
-  }
-
-  .follow-me p {
-    font-size: 2.25em;
-    margin-right: 20px;
-    display: inline;
-  }
-
-  .why-hire {
-    width: 100%;
-    height: 240px;
-    background: #183b56;
-    color: #ffffff;
-    font-family: Poppins;
-    font-weight: 700;
-    font-size: 400%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
-  .why-hire h1 {
-    z-index: 100;
-    position: relative;
-  }
-
-  .hire {
-    text-decoration: underline solid rgb(255, 131, 69, 0.7) 10px;
-  }
-  .orange-underline {
-    background: #ff8345;
-    opacity: 0.7;
-    z-index: 20;
-    position: relative;
-    top: 20px;
-    right: 373px;
-    width: 180px;
-    height: 40px;
-  }
-  .right-main {
-    position: relative;
-  }
-  .quote {
-    position: absolute;
-    width: max-content;
-    height: 98px;
-    left: 60px;
-    top: 60px;
-    font-family: "DM Sans";
-    font-size: 140%;
-    line-height: 35px;
-    color: #000000;
-  }
-  .line {
-    position: absolute;
-    width: 40px;
-    height: 70px;
-    z-index: 50;
-    right: 200px;
-    top: 140px;
-    transform: rotate(-175deg);
-  }
-
-  .profile-pic {
-    width: 50vw;
-    height: 109vh;
-    /* display: none; */
-    object-fit: cover;
-    z-index: 10;
-  }
-
-  /* จน Home */
-
-  .why-me {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f0e3e387;
-    height: 70vh;
-  }
-
-  .why-me-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    /* flex-wrap: wrap; */
-    width: 100vw;
-    height: 58vh;
-    margin-left: 40px;
-    margin-right: 40px;
-  }
-  .why-1 {
-    background: #ffffff;
-    border: 1px solid #ededed;
-    border-radius: 20px;
-    height: 90%;
-    width: 30%;
-    margin-top: 15px;
-  }
-
-  .why-2 {
-    background: #ffffff;
-    border: 1px solid #ededed;
-    border-radius: 20px;
-    height: 90%;
-    width: 30%;
-    /* margin: 0 25px 0 25px; */
-  }
-  .why-3 {
-    background: #ffffff;
-    border: 1px solid #ededed;
-    border-radius: 20px;
-    height: 90%;
-    width: 30%;
-    /* margin: 0 25px 0 25px; */
-  }
-  .why-me-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-  }
-
-  .why-me-img {
-    height: 100px;
-    width: 100px;
-    margin: 40px 0px 40px 100px;
-    align-content: center;
-  }
-
-  .why-heading {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 1.6rem;
-    line-height: 2rem;
-    letter-spacing: 0.2px;
-    color: #183b56;
-    margin: 0 50px 1.8rem 40px;
-  }
-
-  .why-description {
-    font-family: "DM Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 20px;
-    color: #5a7184;
-    margin: 20px 20px 0 40px;
-  }
+.tab-c {
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
 }
 
-/* Extra large devices (large laptops and desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) {
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: "DM Sans", sans-serif;
-    font-family: "Poppins", sans-serif;
-  }
-  html {
-    scroll-behavior: smooth;
-  }
-  .Home {
-    text-align: center;
-  }
-  .navbar {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    margin-left: 7vw;
-    margin-right: 7vw;
-    height: 50%;
-  }
+.tab-c {
+  color: #dbeafe;
+}
 
-  .navbar-link {
-    width: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    font-size: 1.25rem;
-    font-weight: 500;
-    color: #183b56;
-    text-decoration: none;
-  }
+.tab-d:hover {
+  color: #ffffff;
+}
 
-  .nav-home:hover {
-    text-decoration: underline wavy 2.5px #fe481b;
-  }
-  .nav-why:hover {
-    text-decoration: underline wavy 2.5px #fe481b;
-  }
-  .nav-ed:hover {
-    text-decoration: underline wavy 2.5px #fe481b;
-  }
-  .nav-skills:hover {
-    text-decoration: underline wavy 2.5px #fe481b;
-  }
+.tab-panel {
+  margin-top: 0.5rem;
+}
 
-  .btn-chat-with-me {
-    height: 64px;
-    width: 150px;
-    font-size: 1em;
-    font-weight: 700;
-    color: #363131;
-    border-radius: 7px;
-    border: solid 1px #000000;
-  }
+.tab-panel-a {
+  padding: 0.75rem;
+  background-color: #ffffff;
+  border-radius: 0.75rem;
+}
 
-  .btn-chat-with-me:hover {
-    background-color: #ff7c5b;
-    color: #ffffff;
-    border: 3px solid #ff7c5b;
-    border-radius: 7px;
-  }
+.tab-panel-b {
+  --ring-color: #ffffff;
+  --ring-opacity: 0.6;
+  --ring-offset-width: 2px;
+  box-shadow: 0 0 0 var(--ring-offset-width) var(--ring-offset-color),
+    var(--ring-shadow);
+  --ring-offset-color: #60a5fa;
+}
 
-  .cover {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    height: 80%;
-  }
-  .cover button:hover {
-    background-color: #ff7c5b;
-  }
+#headlessui-tabs-tab {
+  width: 100em;
+}
 
-  .left-main {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: space-between;
-    width: 60vw;
-    height: 100vh;
-    margin-top: 80px;
-  }
-  .fullStack {
-    position: absolute;
-    width: 300px;
-    height: 50px;
-    left: 370px;
-    top: 225px;
-    background: #5562ff;
-    border-radius: 29px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 24px;
-    text-align: center;
-    color: #ffffff;
-  }
+#headlessui-tabs-panel {
+  height: 100em;
+}
+.post.id {
+  position: relative;
+  padding: 3rem;
+  border-radius: 0.375rem;
+}
+.post-id:hover {
+  background-color: #f3f4f6;
+}
 
-  .upper-left-main {
-    height: 60vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-  }
+.post-title {
+  font-size: 2rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  height: 2em;
+}
 
-  .main-heading {
-    font-family: Poppins;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 400%;
-    line-height: 90px;
-    color: #183b56;
-    margin-left: 90px;
-    position: "relative";
-  }
-
-  .btn-group {
-    margin-left: 90px;
-  }
-  .main-description {
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.25em;
-    line-height: 35px;
-    margin-left: 90px;
-  }
-
-  .hire-me {
-    height: 60px;
-    width: 120px;
-    font-family: Poppins;
-    font-weight: 700;
-    font-size: 1em;
-    color: #ffffff;
-    line-height: 47px;
-    text-align: center;
-    background: #fe481b;
-    border-radius: 7px;
-    margin-right: 30px;
-  }
-
-  .CV-download {
-    height: 60px;
-    width: 150px;
-    font-family: Poppins;
-    font-weight: 500;
-    font-size: 1em;
-    line-height: 54px;
-    text-align: center;
-    border: 2px solid #ff9b70;
-    border-radius: 10px;
-  }
-  .CV-download:hover {
-    color: #ffffff;
-  }
-
-  #logos {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-  }
-
-  .follow-me {
-    display: flex;
-    flex-direction: row;
-    justify-content: start;
-    align-items: center;
-    height: 76px;
-    margin-left: 90px;
-    margin-bottom: 50px;
-  }
-
-  .follow-me p {
-    font-size: 2.25em;
-    margin-right: 20px;
-    display: inline;
-  }
-
-  .why-hire {
-    width: 100%;
-    height: 240px;
-    background: #183b56;
-    color: #ffffff;
-    font-family: Poppins;
-    font-weight: 700;
-    font-size: 500%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-
-  .why-hire h1 {
-    z-index: 100;
-    position: relative;
-  }
-
-  .hire {
-    text-decoration: underline solid rgb(255, 131, 69, 0.7) 10px;
-  }
-  .orange-underline {
-    background: #ff8345;
-    opacity: 0.7;
-    z-index: 20;
-    position: relative;
-    top: 20px;
-    right: 373px;
-    width: 180px;
-    height: 40px;
-  }
-  .right-main {
-    position: relative;
-  }
-  .quote {
-    position: absolute;
-    width: max-content;
-    height: 98px;
-    left: 60px;
-    top: 60px;
-    font-family: "DM Sans";
-    font-size: 170%;
-    line-height: 40px;
-    color: #000000;
-  }
-  .line {
-    position: absolute;
-    width: 40px;
-    height: 70px;
-    z-index: 50;
-    right: 200px;
-    top: 170px;
-    transform: rotate(-175deg);
-  }
-
-  .profile-pic {
-    width: 45vw;
-    height: 109vh;
-    /* display: none; */
-    object-fit: cover;
-    z-index: 10;
-  }
-
-  /* จน Home */
-
-  .why-me {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #f0e3e387;
-    height: 70vh;
-  }
-
-  .why-me-box {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
-    /* flex-wrap: wrap; */
-    width: 100vw;
-    height: 60vh;
-    margin-left: 40px;
-    margin-right: 40px;
-  }
-  .why-1 {
-    background: #ffffff;
-    border: 1px solid #ededed;
-    border-radius: 20px;
-    height: 90%;
-    width: 30%;
-    margin-top: 15px;
-  }
-  .why-2 {
-    background: #ffffff;
-    border: 1px solid #ededed;
-    border-radius: 20px;
-    height: 90%;
-    width: 30%;
-    /* margin: 0 25px 0 25px; */
-  }
-  .why-3 {
-    background: #ffffff;
-    border: 1px solid #ededed;
-    border-radius: 20px;
-    height: 90%;
-    width: 30%;
-    /* margin: 0 25px 0 25px; */
-  }
-  .why-me-content {
-    display: flex;
-    flex-direction: column;
-    justify-content: start;
-  }
-
-  .why-me-img {
-    height: 100px;
-    width: 100px;
-    margin: 40px 0px 50px 130px;
-    align-content: center;
-  }
-
-  .why-heading {
-    font-family: "Poppins";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 2rem;
-    line-height: 2rem;
-    letter-spacing: 0.2px;
-    color: #183b56;
-    margin: 0 50px 1.8rem 40px;
-  }
-
-  .why-description {
-    font-family: "DM Sans";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 1.25rem;
-    line-height: 2.1875rem;
-    color: #5a7184;
-    margin: 20px 20px 0 40px;
-  }
+.post-date {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.25rem;
+  margin-left: 0.25rem;
+  color: #6b7280;
+  font-size: 0.75rem;
+  line-height: 1rem;
+  font-weight: 400;
+  line-height: 1rem;
+}
+.something-a {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 0.375rem;
+}
+.something-b {
+  --ring-color: #60a5fa;
+}
+.something-b:focus {
+  z-index: 10;
+  outline-style: none;
+  box-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width))
+    var(--tw-ring-color);
 }

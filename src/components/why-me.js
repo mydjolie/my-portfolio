@@ -24,7 +24,7 @@ function WhyMe() {
           </div>
           <div className="why-2">
             <img
-              src="img/open-mind.png"
+              src="img/heart.png"
               alt="`icons of heart and brain"
               className="why-me-img"
             />
@@ -38,7 +38,7 @@ function WhyMe() {
           </div>
           <div className="why-3">
             <img
-              src="img/teamwork.png"
+              src="img/teamwork2.svg"
               alt="`icons of 3 hands in the middle"
               className="why-me-img"
             />

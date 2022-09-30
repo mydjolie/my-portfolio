@@ -4,56 +4,7 @@ import { css } from "@emotion/react";
 function Home() {
   return (
     <div className="home">
-      <nav className="navbar" id="home">
-        <div
-          css={css`
-            display: inline;
-            flex-direction: row;
-            justify-content: start;
-          `}
-        >
-          <p
-            css={css`
-              font-weight: 700;
-              font-size: 2.25em;
-              display: inline;
-            `}
-          >
-            mydjolie
-            <p
-              css={css`
-                color: #ff8345;
-                font-size: 2em;
-                display: inline;
-              `}
-            >
-              .
-            </p>
-          </p>
-        </div>
-        <div className="navbar-link">
-          <a href="#home">
-            <p className="nav-home">Home</p>
-          </a>
-          <a href="#whyMeScroll">
-            <p className="nav-why">Why Me?</p>
-          </a>
-          <p className="nav-ed">Education & Works</p>
-          <p className="nav-skills">Skills</p>
-        </div>
-
-        <button className="btn-chat-with-me">Chat with Me</button>
-      </nav>
-      <hr
-        css={css`
-          border: 3px solid rgba(0, 0, 0, 0.09);
-          margin-left: 7vw;
-          margin-right: 7vw;
-          align-content: start;
-          width: 45vw;
-        `}
-      />
-      {/* แถบ Nav จบ */}
+      <hr className="nav-bar-line" />
       <main className="cover">
         <div className="left-main">
           <div className="fullStack">
@@ -88,22 +39,14 @@ function Home() {
               <div id="logos">
                 <a href="https://www.facebook.com/myddontmind" target="blank">
                   <img
-                    css={css`
-                      height: 50px;
-                      width: 50px;
-                      margin-right: 45px;
-                    `}
+                    className="fb-logo"
                     src="img/fb-logo.svg"
                     alt="facebook-logo"
                   />
                 </a>
                 <a href="https://github.com/mydjolie" target="blank">
                   <img
-                    css={css`
-                      height: 40px;
-                      width: 40px;
-                      margin-right: 50px;
-                    `}
+                    className="github-logo"
                     src="img/github-logo.png"
                     alt="github-logo"
                   />
@@ -113,22 +56,14 @@ function Home() {
                   target="blank"
                 >
                   <img
-                    css={css`
-                      height: 40px;
-                      margin-right: 35px;
-                    `}
+                    className="linkedin-logo"
                     src="img/LI-in-bug.png"
                     alt="linkedin-logo"
                   />
                 </a>
                 <a href="https://www.instagram.com/mydjolie_/" target="blank">
                   <img
-                    css={css`
-                      height: 60px;
-                      width: 60px;
-                      margin-right: 45px;
-                      object: fill;
-                    `}
+                    className="instagram-logo"
                     src="img/Instagram-Logo.wine.svg"
                     alt="instagram-logo"
                   />
