@@ -19,7 +19,9 @@ function NavBar() {
           <p className="nav-skills">Skills</p>
         </div>
 
-        <button className="btn-chat-with-me">Chat with Me</button>
+        <a href="http://m.me/myddontmind" target="blank">
+          <button className="btn-chat-with-me">Chat with Me</button>
+        </a>
       </nav>
     </>
   );
