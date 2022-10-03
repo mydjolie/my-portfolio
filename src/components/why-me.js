@@ -1,11 +1,11 @@
-/** @jsxImportSource @emotion/react */
-import { ModalBody } from "@chakra-ui/react";
-import { css } from "@emotion/react";
-
 function WhyMe() {
   return (
     <body>
       <div className="why-me-whole">
+        <h3 className="why-hire-small">
+          <div className="blue-box"></div>
+          Why <span className="hire-small">Hire</span> Me ?
+        </h3>
         <div className="why-me">
           <div className="why-me-box">
             <div className="why-1">
@@ -14,7 +14,6 @@ function WhyMe() {
                 alt="`icons of lightning"
                 className="why-me-img"
               />
-
               <div className="why-me-content">
                 <p className="why-heading">Energetic and Accountable</p>
                 <p className="why-description">
@@ -29,7 +28,6 @@ function WhyMe() {
                 alt="`icons of heart and brain"
                 className="why-me-img"
               />
-
               <div className="why-me-content">
                 <p className="why-heading">Flexible and Open-minded</p>
                 <p className="why-description">
@@ -43,7 +41,6 @@ function WhyMe() {
                 alt="`icons of 3 hands in the middle"
                 className="why-me-img"
               />
-
               <div className="why-me-content">
                 <p className="why-heading">Talkative and Friendly</p>
                 <p className="why-description">
@@ -54,7 +51,7 @@ function WhyMe() {
             </div>
           </div>
         </div>
-        <h2 className="why-me-heading">
+        <h2 className="why-me-quote">
           "It is not the strongest or most intelligent who will survive but
           those who can best manage change.” <br />
           <span>– Charles Darwin</span>

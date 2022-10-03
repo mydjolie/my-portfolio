@@ -1,20 +1,15 @@
-import { Tab } from "@headlessui/react";
-import { Fragment } from "react";
 import EducationAndWorksTab from "./education and works tab";
-/** @jsxImportSource @emotion/react */
-import { css } from "@emotion/react";
 
 function EducationWorks() {
   return (
     <div className="main-ed">
       <div className="head-edWork"></div>
-      <div
-        className="head-edworkk"
-        css={css`
-          height: 35vh;
-        `}
-      >
+      <div className="head-works">
         <h1 className="title-ed">
+          Education & <br /> <span className="work-underline">Work</span>{" "}
+          Experiences
+        </h1>
+        <h1 className="title-ed-small">
           Education & <br /> <span className="work-underline">Work</span>{" "}
           Experiences
         </h1>

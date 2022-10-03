@@ -244,20 +244,16 @@ html {
   z-index: 100;
   position: relative;
 }
-
+.why-hire-small {
+  display: none;
+}
+.blue-box {
+  display: none;
+}
 .hire {
   text-decoration: underline solid rgb(255, 131, 69, 0.7) 10px;
 }
-/* .orange-underline {
-  background: #ff8345;
-  opacity: 0.7;
-  z-index: 20;
-  position: relative;
-  top: 20px;
-  right: 373px;
-  width: 180px;
-  height: 40px;
-} */
+
 .right-main {
   position: relative;
 }
@@ -299,13 +295,7 @@ html {
   background-color: #f0e3e387;
   height: 75vh;
 }
-.why-me-heading {
-  font-family: "DM Sans";
-  font-size: 2.3em;
-  width: 90vw;
-  text-align: center;
-  margin-top: 1em;
-}
+
 .why-me {
   display: flex;
   flex-direction: row;
@@ -358,6 +348,14 @@ html {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
+
+.why-me-quote {
+  font-family: "DM Sans";
+  font-size: 2.3em;
+  width: 90vw;
+  text-align: center;
+  margin-top: 1em;
 }
 
 .why-me-img {
@@ -423,6 +421,9 @@ html {
   /* height: min-content; */
   position: absolute;
   z-index: 20;
+}
+.title-ed-small {
+  display: none;
 }
 .work-underline {
   text-decoration: underline solid rgb(255, 131, 69, 0.7) 10px;
@@ -504,13 +505,13 @@ html {
   --ring-offset-color: #60a5fa;
 }
 
-#headlessui-tabs-tab {
+/* #headlessui-tabs-tab {
   width: 100em;
 }
 
 #headlessui-tabs-panel {
   height: 100em;
-}
+} */
 
 .post.id {
   position: relative;
@@ -530,19 +531,24 @@ html {
   border-top-left-radius: 1rem;
   height: 50%;
 }
+.head-works {
+  height: 35vh;
+}
+
 .post-title {
   font-size: 2rem;
   font-weight: 600;
   line-height: 1.25rem;
   margin-bottom: 0.5rem;
   padding: 0.5rem;
+  padding-top: 1rem;
   border-top-left-radius: 5rem;
 }
 
 .p-date {
   font-weight: 500;
   font-size: 1.75rem;
-  padding: 0.5rem;
+  padding: 1rem;
   border-top-right-radius: 10rem;
 }
 
@@ -550,12 +556,12 @@ html {
   font-size: 1.25rem;
   margin-bottom: 2em;
   background-color: #ffffffe6;
-  padding: 0.75rem;
+  padding: 1rem;
   border-bottom-right-radius: 1.5rem;
   border-bottom-left-radius: 1.5rem;
 }
 
-.post-date {
+/* .post-date {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -565,7 +571,7 @@ html {
   line-height: 2rem;
   font-weight: 400;
   margin-bottom: 1em;
-}
+} */
 
 .something-a {
   position: absolute;
@@ -583,4 +589,252 @@ html {
   outline-style: none;
   box-shadow: var(--tw-ring-inset) 0 0 0 calc(2px + var(--tw-ring-offset-width))
     var(--tw-ring-color);
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .mind-head {
+    font-size: 1em;
+  }
+  .navbar {
+    justify-content: flex-start;
+  }
+  #home {
+    height: 7vh;
+    margin-left: 30px;
+    margin-right: 30px;
+    justify-content: space-between;
+  }
+  .navbar-link {
+    width: 300px;
+    font-size: small;
+  }
+  .nav-bar-line {
+    width: 90vw;
+    margin-left: 30px;
+    border: 2px solid rgba(0, 0, 0, 0.09);
+  }
+  .btn-chat-with-me {
+    display: none;
+  }
+  .left-main {
+    height: 36vh;
+    width: 100vw;
+  }
+  .upper-left-main {
+    margin-left: 60px;
+  }
+  .main-heading {
+    font-size: 3.5em;
+    width: 100%;
+    margin-top: 7%;
+  }
+  .main-description {
+    font-size: 1em;
+    width: 100%;
+  }
+  .cover {
+    flex-direction: column;
+    width: 100vw;
+  }
+  .fullStack {
+    width: 35%;
+    height: 1.3%;
+    font-size: 1em;
+    top: 132px;
+    left: 300px;
+  }
+  .hire-me {
+    height: 140%;
+    width: 30%;
+    font-size: 1em;
+    line-height: 0;
+    margin-bottom: 0.5em;
+  }
+  .CV-download {
+    height: 140%;
+    width: 30%;
+    font-size: 1em;
+    line-height: 0;
+  }
+  .btn-group {
+    margin-top: 20px;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+  .follow-me {
+    width: 100%;
+  }
+  #logos {
+    margin-top: 30px;
+    width: max-content;
+    margin-left: 0;
+  }
+  .fb-logo {
+    height: 40px;
+  }
+  .github-logo {
+    height: 35px;
+    margin-right: 35px;
+  }
+  .linkedin-logo {
+    height: 35px;
+    width: 40px;
+    margin-right: 20px;
+  }
+  .instagram-logo {
+    height: 55px;
+  }
+  .why-hire {
+    /* height: 20%;
+    width: 60%;
+    font-size: 2em; */
+    display: none;
+  }
+  .right-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .profile-pic {
+    width: 100vw;
+    height: 70vh;
+    margin: 0;
+    position: relative;
+  }
+  .quote {
+    font-size: 1.7em;
+    z-index: 20;
+    top: 45px;
+    left: 75px;
+  }
+  .line {
+    display: none;
+  }
+  .why-me-whole {
+    display: inline-block;
+    height: 176vh;
+    justify-content: center;
+    align-items: center;
+  }
+  .why-hire-small {
+    position: relative;
+    bottom: 80px;
+    z-index: 20;
+    width: 100vw;
+    height: 10vh;
+    background: #183b56;
+    color: #ffffff;
+    font-family: Poppins;
+    font-weight: 700;
+    font-size: 300%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 3em;
+    /* border-bottom-right-radius: 3em; */
+  }
+  .why-hire-small h3 {
+    margin-left: 50px;
+  }
+
+  .hire-small {
+    text-decoration: underline solid rgb(255, 131, 69, 0.7) 10px;
+  }
+  .why-me-box {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 140vh;
+  }
+  .why-me-img {
+    height: 120px;
+    width: 120px;
+  }
+  .why-1 {
+    width: 70vw;
+    margin-top: 0px;
+    height: 70vh;
+  }
+
+  .why-2 {
+    width: 70vw;
+    margin-top: 50px;
+    height: 70vh;
+  }
+
+  .why-3 {
+    width: 70vw;
+    margin-top: 50px;
+    height: 70vh;
+  }
+  .why-me-content {
+    width: 60vw;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .why-heading {
+    font-size: 2.5em;
+    width: 60vw;
+    margin: 0;
+  }
+  .why-description {
+    font-size: 1.5em;
+    width: 60vw;
+    margin: 0;
+    margin-top: 20px;
+  }
+  .why-me-quote {
+    font-size: 2em;
+    /* width: 80vw; */
+    margin-right: 0px;
+    margin-left: 20px;
+  }
+  .title-ed {
+    display: none;
+  }
+  .title-ed-small {
+    font-family: "Poppins";
+    font-style: normal;
+    font-weight: 700;
+    display: block;
+    font-size: 2.8em;
+    width: max-content;
+    margin-left: 70px;
+    margin-top: 30px;
+  }
+  .main-ed {
+    height: 0vh;
+  }
+  .head-edWork {
+    height: 5vh;
+  }
+  .head-works {
+    height: 16vh;
+  }
+  .tab-normal {
+    font-size: 2em;
+    line-height: 1em;
+  }
+  .post-title {
+    font-size: 1.3em;
+    line-height: 1.2em;
+    padding-top: 3em;
+    padding-bottom: 2em;
+  }
+  .p-date {
+    font-size: 0.9em;
+  }
+  .yellow-thing {
+    left: -350px;
+    top: 630px;
+    scale: 170%;
+  }
+  .green-thing {
+    top: -500px;
+    scale: 50%;
+    left: 200px;
+  }
 }
