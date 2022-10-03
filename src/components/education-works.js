@@ -6,20 +6,32 @@ import { css } from "@emotion/react";
 
 function EducationWorks() {
   return (
-    <>
-      <h1
+    <div className="main-ed">
+      <div className="head-edWork"></div>
+      <div
+        className="head-edworkk"
         css={css`
-          font-family: Poppins;
-          font-size: 100px;
-          text-align: center;
+          height: 35vh;
         `}
       >
-        COMING SOON!
-      </h1>
-      <div>
-        <EducationAndWorksTab />
+        <h1 className="title-ed">
+          Education & <br /> <span className="work-underline">Work</span>{" "}
+          Experiences
+        </h1>
+
+        <img
+          className="yellow-thing"
+          src="/img/yellow-thing.svg"
+          alt="yellow curvy thing"
+        />
+        <img
+          className="green-thing"
+          src="/img/green-thing.svg"
+          alt="green curvy object"
+        />
       </div>
-    </>
+      <EducationAndWorksTab />
+    </div>
   );
 }
 

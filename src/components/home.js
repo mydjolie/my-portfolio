@@ -71,7 +71,7 @@ function Home() {
               </div>
             </div>
           </div>
-          <hr
+          {/* <hr
             className="white-line2"
             css={css`
               border: 3px solid rgba(0, 0, 0, 0.09);
@@ -80,7 +80,7 @@ function Home() {
               align-content: start;
               width: 30vw;
             `}
-          />
+          /> */}
           <div className="down-left-main">
             <div className="why-hire" id="whyMeScroll">
               <h1>
