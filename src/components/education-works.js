@@ -2,7 +2,7 @@ import EducationAndWorksTab from "./education and works tab";
 
 function EducationWorks() {
   return (
-    <div className="main-ed">
+    <div className="main-ed" id="EducationAndWorkExperience">
       <div className="head-edWork"></div>
       <div className="head-works">
         <h1 className="title-ed">

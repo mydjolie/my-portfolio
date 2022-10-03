@@ -15,7 +15,9 @@ function NavBar() {
           <a href="#whyMeScroll">
             <p className="nav-why">Why Me?</p>
           </a>
-          <p className="nav-ed">Education & Works</p>
+          <a href="#EducationAndWorkExperience">
+            <p className="nav-ed">Education & Works</p>
+          </a>
           <p className="nav-skills">Skills</p>
         </div>
 
